@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --accent: #1a4d7a;
+    --ink: #1a1a1a;
+    --muted: #555;
+    --rule: #c9c9c9;
+  }
+  @page { size: letter; margin: 0.5in 0.6in; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    font-size: 10.2pt;
+    line-height: 1.32;
+    margin: 0;
+  }
+  .name { font-size: 21pt; font-weight: 700; color: var(--accent); letter-spacing: .3px; }
+  .title { font-size: 11pt; color: var(--muted); margin-top: 2px; font-weight: 600; }
+  .contact { font-size: 9.2pt; color: var(--muted); margin-top: 5px; }
+  .contact a { color: var(--muted); text-decoration: none; }
+  h2 {
+    font-size: 10.5pt; text-transform: uppercase; letter-spacing: 1px;
+    color: var(--accent); border-bottom: 1.2px solid var(--rule);
+    padding-bottom: 2px; margin: 13px 0 7px;
+  }
+  .summary { margin: 0; }
+  .skills p { margin: 2px 0; }
+  .skills .cat { font-weight: 700; color: var(--ink); }
+  .job { margin-bottom: 9px; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-role { font-weight: 700; }
+  .job-co { font-weight: 600; }
+  .job-meta { color: var(--muted); font-size: 9.2pt; white-space: nowrap; }
+  ul { margin: 3px 0 0; padding-left: 16px; }
+  li { margin-bottom: 1.5px; }
+  .row { display: flex; justify-content: space-between; }
+  .row .meta { color: var(--muted); font-size: 9.2pt; }
+</style>
+</head>
+<body>
+
+  <div class="name">Dor Attar</div>
+  <div class="title">DevOps / Platform Engineer</div>
+  <div class="contact">
+    Israel &middot; dorattar4@gmail.com &middot; 050-678-2262
+  </div>
+
+  <h2>Summary</h2>
+  <p class="summary">DevOps / Platform Engineer experienced in operating multi-cluster Kubernetes platforms and building reusable CI/CD across on-prem and cloud environments. CKA-, AWS-, Azure-, and GCP-certified, with a strong foundation in infrastructure as code, GitOps, and platform automation. Comfortable across the full delivery path, from infrastructure through .NET and Next.js application support.</p>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <p><span class="cat">Cloud:</span> Azure, AWS, GCP &nbsp;&middot;&nbsp; <span class="cat">IaC:</span> Terraform, CloudFormation, Ansible</p>
+    <p><span class="cat">Containers &amp; Orchestration:</span> Kubernetes, Helm, Kustomize, Istio, AKS &nbsp;&middot;&nbsp; <span class="cat">CI/CD &amp; GitOps:</span> GitHub Actions, Argo CD, GitLab CI, Jenkins</p>
+    <p><span class="cat">Scripting:</span> Python, Bash &nbsp;&middot;&nbsp; <span class="cat">Other:</span> Linux, Networking, SQL, .NET, Next.js, Java, C</p>
+  </div>
+
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="job-head">
+      <span><span class="job-role">DevOps Engineer</span>, <span class="job-co">Bynet Data Communications</span></span>
+      <span class="job-meta">Tel Aviv, Israel &middot; Dec 2025–Present</span>
+    </div>
+    <ul>
+      <li>Operate and maintain a multi-cluster Kubernetes platform of 8 clusters across on-prem and Azure AKS, spanning dev, staging, production, and US-production environments.</li>
+      <li>Re-architected CI/CD for 20 developers by migrating all pipelines into reusable GitHub Actions workflows and composite actions, accelerating new-service onboarding and enabling atomic, consistent pipeline updates across the platform.</li>
+      <li>Manage Azure cloud infrastructure and GitOps-based delivery with Argo CD and Helm, supporting .NET and Next.js application teams from infrastructure through deployment.</li>
+      <li>Built reusable AWS CloudFormation templates to provision cloud-native GitLab stacks (EC2, RDS, S3, Redis) for repeatable deployments; delivered during the initial internship phase before converting to a full DevOps Engineer role.</li>
+    </ul>
+  </div>
+
+  <h2>Certifications</h2>
+  <div class="row"><span>Certified Kubernetes Administrator (CKA), CNCF / Linux Foundation</span></div>
+  <div class="row"><span>AWS Certified Solutions Architect - Associate, Amazon Web Services</span></div>
+  <div class="row"><span>Microsoft Certified: Azure Administrator Associate (AZ-104), Microsoft</span></div>
+  <div class="row"><span>Professional Data Engineer, Google Cloud</span></div>
+
+  <h2>Education</h2>
+  <div class="row"><span>B.Sc. Computer Science, The Open University of Israel</span><span class="meta">2025–Present</span></div>
+  <div class="row"><span>DevOps Engineering Bootcamp, 8200 Alumni Association</span><span class="meta">Sep 2024–Sep 2025</span></div>
+
+</body>
+</html>
